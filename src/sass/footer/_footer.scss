@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    color: #df3b3b;
+    text-decoration: none;
+  }
+
+  svg {
+    margin-right: 1.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}

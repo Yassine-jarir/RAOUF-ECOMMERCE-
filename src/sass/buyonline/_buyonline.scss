@@ -1,0 +1,33 @@
+@use "../global/typographie" as *;
+
+.buyOnline {
+  margin-top: 5rem;
+  display: grid;
+  gap: 2rem;
+
+  @media screen and (min-width: $layout-breakpoint-medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .data {
+    background-color: #ebebeb;
+    padding: 2rem;
+
+    .data_title {
+      font-size: 1.2rem;
+    }
+    .btnText {
+      color: #df3b3b;
+      font-size: 0.95rem;
+    }
+    .payment_images {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+
+      .payment_img {
+        width: 2rem;
+      }
+    }
+  }
+}

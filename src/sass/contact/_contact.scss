@@ -1,0 +1,44 @@
+@use "../global/typographie" as *;
+.contact_container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  gap: 2rem;
+
+  @media screen and (min-width: $layout-breakpoint-medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  form {
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input {
+        padding: 0.65rem;
+        width: 17rem;
+        outline: none;
+        border: 1px solid $black;
+        font-family: "Poppins";
+
+        &::placeholder {
+          font-weight: 500;
+          color: $black;
+        }
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.65rem 1.65rem;
+      color: $white;
+      font-family: "Poppins";
+      background-color: $black;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@use "../global/typographie" as *;
+.menuNavigation {
+  position: fixed;
+  z-index: 20;
+  height: 100vh;
+  top: 0;
+  left: -30rem;
+  width: 18rem;
+  background-color: $white;
+  box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.1);
+  padding: 2rem;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  @media screen and (min-width: $layout-breakpoint-xsmall) {
+    width: 23rem;
+  }
+
+  &.open {
+    left: 0;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .minim {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .menuX {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $black;
+      border-radius: 50%;
+      cursor: pointer;
+
+      svg {
+        color: $white;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .menuDatas {
+    padding: 2rem 0;
+    user-select: none;
+
+    .dataGroup {
+      padding: 1rem 0;
+
+      .dataGroupName {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .rotate0 {
+          transform: rotate(0deg);
+          transition: all 0.3s ease;
+        }
+        .rotate180 {
+          transform: rotate(180deg);
+          transition: all 0.3s ease;
+        }
+      }
+      .dataItems {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          text-decoration: none;
+          padding: 0.5rem;
+          color: #df3b3b;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .callUs {
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .openHours {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

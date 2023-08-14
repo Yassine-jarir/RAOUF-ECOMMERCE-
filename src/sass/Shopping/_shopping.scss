@@ -1,0 +1,48 @@
+@use "../global/typographie" as *;
+.shopping {
+  min-height: 400px;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+
+  @media screen and (min-width: $layout-breakpoint-medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &:nth-child(1) {
+    background-color: #e3dfd3;
+    margin-bottom: 2rem;
+  }
+
+  &:nth-child(2) {
+    background-color: #dbe9ed;
+
+    // @media screen and (min-width: $layout-breakpoint-medium) {
+    //   img {
+    //     // grid-column: 1 / span 2;
+    //   }
+    // }
+  }
+
+  img {
+    @media screen and (min-width: $layout-breakpoint-medium) {
+      width: 600px;
+    }
+  }
+  .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    @media screen and (min-width: $layout-breakpoint-small) {
+      font-size: 2rem;
+    }
+  }
+
+  .shopBtn {
+    color: $black;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+}

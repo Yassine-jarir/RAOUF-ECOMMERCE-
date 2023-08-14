@@ -1,5 +1,25 @@
+import {
+  BuyOnline,
+  Contact,
+  Footer,
+  Home,
+  Navbar,
+  PopularProd,
+  Shopping,
+} from "./components";
+
 function App() {
-  return <div className="App">dv</div>;
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <PopularProd />
+      <Shopping />
+      <BuyOnline />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

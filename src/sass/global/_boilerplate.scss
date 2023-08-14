@@ -1,0 +1,60 @@
+@use "./colors" as *;
+@use "./typographie" as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: $body-bg;
+  font-family: $titles-font;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+p {
+  font-size: $p-size;
+  margin: 1rem 0;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+// global
+.container {
+  max-width: $layout-breakpoint-medium;
+  margin: 0 auto;
+}
+
+section {
+  padding: 7rem 2rem 5rem 2rem;
+
+  @media screen and (min-width: $layout-breakpoint-small) {
+    padding: 7rem 3rem;
+  }
+}
+.min_100vh {
+  min-height: 100vh;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  @media screen and (min-width: $layout-breakpoint-small) {
+    font-size: 1.6rem;
+  }
+
+  span {
+    text-transform: uppercase;
+    opacity: 0.45;
+  }
+}
