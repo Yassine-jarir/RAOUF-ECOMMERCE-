@@ -10,6 +10,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: $body-bg;
   font-family: $titles-font;
@@ -24,6 +27,10 @@ p {
   margin: 1rem 0;
   font-weight: 500;
   line-height: 1.5rem;
+}
+a {
+  color: #000;
+  text-decoration: none;
 }
 // global
 .container {

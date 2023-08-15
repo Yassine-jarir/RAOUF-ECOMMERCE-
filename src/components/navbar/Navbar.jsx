@@ -2,6 +2,7 @@ import { HiMenuAlt4, HiOutlineShoppingBag } from "react-icons/hi";
 import { FiSearch } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import MenuNavigation from "./MenuNavigation";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -25,10 +26,15 @@ function Navbar() {
             </div>
             <FiSearch />
           </div>
-          <div className="logo">minim</div>
+          <Link className="logo" to="/">
+            minim
+          </Link>
           <div className="accountAndCart">
-            <a href="">account</a>
-            <HiOutlineShoppingBag />
+            <Link to="categories/all">Categories</Link>
+            <div className="pos">
+              <HiOutlineShoppingBag />
+              <div className="prod_number">3</div>
+            </div>
           </div>
         </nav>
       </div>

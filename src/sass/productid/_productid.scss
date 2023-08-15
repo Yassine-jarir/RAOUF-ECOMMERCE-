@@ -1,0 +1,116 @@
+@use "../global/typographie" as *;
+.prodid__container {
+  margin-top: 7rem;
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  h1 {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+  .prodcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    top: -58px;
+    // z-index: -1;
+    @media screen and (max-width: $layout-breakpoint-small) {
+      grid-template-columns: 1fr;
+      top: -13px;
+    }
+    .prod_img {
+      width: 50%;
+    }
+    .info_prod_container {
+      background: #d9d9d9;
+      padding: 4rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 2rem;
+      .prod_btn {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        button {
+          cursor: pointer;
+          font-size: 1.2rem;
+          font-weight: 700;
+          height: 4.5rem;
+          text-transform: uppercase;
+          transition: all 0.7s;
+          width: 50%;
+          &:nth-child(1) {
+            background-color: initial;
+            border: 2px solid #000 !important;
+            &:hover {
+              background-color: #000;
+              color: white;
+            }
+          }
+          &:nth-child(2) {
+            background-color: #b6002c;
+            border: 2px solid #b6002c !important;
+            color: #fff;
+            &:hover {
+              background-color: white;
+              color: #b6002c;
+            }
+          }
+        }
+      }
+    }
+    .prod_info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      @media screen and (max-width: $layout-breakpoint-small) {
+        justify-content: space-evenly;
+      }
+      span {
+        font-weight: bolder;
+        font-size: 2rem;
+        font-weight: bolder;
+        font-size: x-large;
+      }
+      .price-plus {
+        border: 1px solid #000;
+
+        button {
+          background-color: #fff;
+          border: none;
+          color: #000;
+          font-size: 3rem;
+          height: 3.5rem;
+          transition: all 0.2s;
+          width: 3.5rem;
+          @media screen and (max-width: $layout-breakpoint-small) {
+            font-size: 2rem;
+            height: 2.5rem;
+            transition: all 0.2s;
+            width: 2.5rem;
+          }
+          &:nth-child(1) {
+            border-right: 1px solid #000;
+            cursor: pointer;
+          }
+          &:nth-child(2) {
+            background-color: #bebebe;
+          }
+          &:nth-child(3) {
+            border-left: 1px solid #000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

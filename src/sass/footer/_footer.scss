@@ -1,8 +1,13 @@
+@use "../global/typographie" as *;
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   a {
     color: #df3b3b;
@@ -14,4 +19,43 @@
     font-size: 1.4rem;
     cursor: pointer;
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 14rem;
+  background-color: black;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (max-width: $layout-breakpoint-xsmall) {
+    gap: 1rem;
+  }
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  @media screen and (max-width: $layout-breakpoint-xsmall) {
+    font-size: 1rem;
+  }
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.love {
+  color: white;
+  font-size: 1.7rem;
+  margin-top: 3rem;
 }
