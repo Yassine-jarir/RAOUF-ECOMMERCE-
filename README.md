@@ -13,10 +13,13 @@ This is a minimalist e-commerce website built with React and sass. This website 
 <div align="center">
  <h3>Categories Page 👇</h3> 
 </div>
+
 ![Alt Text](https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(4).png?raw=true)
+
 <div align="center">
  <h3>Shopping Cart 🛒</h3> 
 </div>
+
 ![Alt Text](https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(5).png?raw=true)
 
 
