@@ -2,4 +2,15 @@
 
 This is a minimalist e-commerce website built with React and CSS. This website features a modern and intuitive design, with easy-to-use navigation and a simple shopping experience that puts the focus on the products
 
-[👉 Live Demo]([https://www.example.com](https://raouf-ecommerce.vercel.app/)https://raouf-ecommerce.vercel.app/)
+👉 Live Demo :[Ecommerce Demo](https://raouf-ecommerce.vercel.app/) 
+
+<div align="center">
+ <h3>Home Page 🏡</h3> 
+</div>
+
+![Alt Text](https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(1).png?raw=true)
+![Alt Text](https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(2).png?raw=true)
+![Alt Text](https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(4).png?raw=true)
+![Alt Text](https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(5).png?raw=true)
+
+
