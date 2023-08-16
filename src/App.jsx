@@ -9,7 +9,6 @@ function App() {
   return (
     <ShoppingContextProvider>
       <Navbar />
-
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="categories" element={<Categories />}>

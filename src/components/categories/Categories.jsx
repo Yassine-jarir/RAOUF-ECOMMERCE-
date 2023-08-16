@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import CategorieHeader from "../container/categorieHeader";
+import CategorieHeader from "../container/CategorieHeader";
 
 function Categories() {
   return (

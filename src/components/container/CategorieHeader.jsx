@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 function CategorieHeader() {
   return (
     <div className="container-cat">
+      
       <div className="popular_container">
         <div className="title popular">
           Popular <span>products</span>
@@ -29,8 +30,5 @@ function CategorieHeader() {
     </div>
   );
 }
-//men's clothing
-//jewelery
-//electronics
-//women's clothing
+
 export default CategorieHeader;
