@@ -9,7 +9,12 @@
   h1 {
     text-align: center;
     z-index: 2;
+    font-size: 1.5rem;
+    font-weight: bolder;
     position: relative;
+    @media screen and (max-width: $layout-breakpoint-small) {
+      margin-bottom: 2rem;
+    }
   }
   .prodcontainer {
     display: grid;

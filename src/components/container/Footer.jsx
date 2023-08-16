@@ -3,7 +3,7 @@ import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 function Footer() {
   return (
     <>
-      <footer>
+      <footer className="p-[1rem]">
         <div className="footer-links">
           <a href="#">About</a>
           <a href="#">Store locator</a>
@@ -17,7 +17,7 @@ function Footer() {
             &#169; Copyright 2023 Minim. Website Thoughtfully designed by{" "}
             <a href="">Yassine jarir </a>
           </p>
-          <div className="footer_socials">
+          <div className="footer_socials flex">
             <BsInstagram />
             <BsFacebook />
             <BsTwitter />

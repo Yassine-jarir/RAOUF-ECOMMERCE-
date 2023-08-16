@@ -1,18 +1,23 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { AiFillBackward } from "react-icons/ai";
+import { ShopingContext } from "../../context/Context";
 function Prodid() {
-  const { productid } = useParams();
-  const [product, setproduct] = useState();
-  const [number, setnum] = useState(1);
+  let { productid } = useParams();
+  productid = parseInt(productid);
+  const { getitemsQuantity, increaseCartQuantity, decreaseCartQuantity } =
+    useContext(ShopingContext);
+  const quatity = getitemsQuantity(productid);
+  const [prod, setprod] = useState();
+
   useEffect(() => {
     // Make the GET request when the component mounts
     axios
       .get(`https://fakestoreapi.com/products/${productid}`)
       .then((response) => {
         // Update the state with the fetched products
-        setproduct(response.data);
+        setprod(response.data);
       })
       .catch((error) => {
         console.error("Error fetching products:", error);
@@ -22,29 +27,46 @@ function Prodid() {
   return (
     <>
       <div className="prodid__container">
-        <Link to={`/categories/${product?.category}`}>
+        <Link
+          to={`/categories/${prod?.category}`}
+          className="cursor-pointer z-20 relative"
+        >
           <AiFillBackward />
           BACK
         </Link>
-        <h1>{product?.category}</h1>
+        <h1>{prod?.category}</h1>
         <div className="prodcontainer">
           <div className="prod_img">
-            <img src={product?.image} alt="" />
+            <img src={prod?.image} alt="" />
           </div>
           <div className="info_prod_container">
-            {product?.description}
+            {prod?.description}
             <div className="prod_info">
               <p>Quantity</p>
               <div className="price-plus">
                 <button
-                  onClick={() => setnum((prev) => (prev > 1 ? prev - 1 : 1))}
+                  onClick={() =>
+                    getitemsQuantity(productid) >= 1
+                      ? decreaseCartQuantity(productid)
+                      : null
+                  }
                 >
                   -
                 </button>
-                <button>{number}</button>
-                <button onClick={() => setnum((prev) => prev + 1)}>+</button>
+                <button>
+                  {getitemsQuantity(productid) >= 1
+                    ? getitemsQuantity(productid)
+                    : 1}
+                </button>
+                <button
+                  onClick={() => {
+                    increaseCartQuantity(productid);
+                  }}
+                >
+                  +
+                </button>
               </div>
-              <span>${product?.price * number}</span>
+              <span>${quatity <= 1 ? prod?.price : prod?.price * quatity}</span>
             </div>
             <div className="prod_btn">
               <button>ADD TO CART</button>

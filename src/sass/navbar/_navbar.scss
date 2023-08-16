@@ -6,6 +6,8 @@
   top: 0;
   left: 0;
   z-index: 10;
+  transition: all 0.5s ease;
+
   &.active {
     box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.1);
     backdrop-filter: blur(20px);
@@ -16,6 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.5s ease;
+    &.activenav {
+      padding: 1rem;
+    }
 
     @media screen and (min-width($layout-breakpoint-small)) {
       padding: 2rem;
@@ -50,6 +56,9 @@
     .logo {
       font-size: 1.5rem;
       font-weight: 500;
+      @media screen and (max-width: $layout-breakpoint-small) {
+        display: none;
+      }
     }
 
     .accountAndCart {
@@ -67,6 +76,10 @@
         font-weight: bold;
         @media screen and (min-width: $layout-breakpoint-small) {
           margin-right: 5rem;
+        }
+        @media screen and (max-width: $layout-breakpoint-small) {
+          margin-right: 1.5rem;
+          font-size: 0.8em;
         }
       }
       .pos {

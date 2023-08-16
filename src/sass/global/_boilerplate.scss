@@ -10,6 +10,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -18,6 +19,10 @@ body {
   font-family: $titles-font;
   margin: 0;
   padding: 0;
+}
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 img {
   width: 100%;
@@ -31,6 +36,7 @@ p {
 a {
   color: #000;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 // global
 .container {

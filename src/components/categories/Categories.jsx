@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import CategorieHeader from "../container/categorieHeader";
-// import Products from "../container/Products";
 
 function Categories() {
   return (

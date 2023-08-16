@@ -1,0 +1,12 @@
+.shoppingcart {
+  position: absolute;
+  transition: all 1s;
+  right: -450px;
+  z-index: 10;
+  &.open {
+    right: 0;
+  }
+  &.close {
+    right: -450px;
+  }
+}
