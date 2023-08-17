@@ -1,8 +1,24 @@
-# React + Vite
+This is a minimalist e-commerce website built with React and sass. This website features a modern and intuitive design, with easy-to-use navigation and a simple shopping experience that puts the focus on the products
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+👉 Live Demo :[Ecommerce Demo](https://raouf-ecommerce.vercel.app/)
 
-Currently, two official plugins are available:
+<div align="center">
+ <h3>Home Page 🏡</h3> 
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Alt Text](<https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(1).png?raw=true>)
+![Alt Text](<https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(2).png?raw=true>)
+
+<div align="center">
+ <h3>Categories Page 👇</h3> 
+</div>
+
+![Alt Text](<https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(4).png?raw=true>)
+
+<div align="center">
+ <h3>Shopping Cart 🛒</h3> 
+</div>
+
+![Alt Text](<https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(5).png?raw=true>)
+
+> > > > > > > origin/main
