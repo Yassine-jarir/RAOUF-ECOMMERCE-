@@ -1,14 +1,8 @@
-# About the project
+# React + Vite
 
-This is a minimalist e-commerce website built with React and CSS. This website features a modern and intuitive design, with easy-to-use navigation and a simple shopping experience that puts the focus on the products
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-👉 Live Demo: [ Ecommerce Demo](https://www.example.com/ecommerce-demo)
+Currently, two official plugins are available:
 
-# Build with:
-
-» sass<br>
-» React JS
-
-# Screenshots of the Project 📸
-
-![Screenshot](C:\Users\pc\OneDrive\Bureau\APP react js SASS\RAOUF ECOMMERCE 🛒\public\E-commerce (1).png)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
