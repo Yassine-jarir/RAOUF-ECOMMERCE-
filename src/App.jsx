@@ -4,7 +4,7 @@ import ProdDetails from "./components/container/ProdDetails";
 import Prodid from "./components/container/Prodid";
 import ShoppingContextProvider from "./context/Context";
 import Categories from "./components/categories/Categories";
-
+// ssine
 function App() {
   return (
     <ShoppingContextProvider>
