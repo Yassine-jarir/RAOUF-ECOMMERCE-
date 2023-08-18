@@ -21,4 +21,4 @@ This is a minimalist e-commerce website built with React and sass. This website 
 
 ![Alt Text](<https://github.com/Yassine-jarir/RAOUF-ECOMMERCE-/blob/main/public/E-commerce%20(5).png?raw=true>)
 
-> > > > > > > origin/main
+ 
