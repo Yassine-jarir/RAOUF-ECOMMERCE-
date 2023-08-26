@@ -1,6 +1,6 @@
 This is a minimalist e-commerce website built with React and sass. This website features a modern and intuitive design, with easy-to-use navigation and a simple shopping experience that puts the focus on the products
 
-👉 Live Demo :[EVOGYM](https://gymate-seven.vercel.app/)
+👉 Live Demo :[E-commerce](https://raouf-ecommerce.vercel.app/)
 
 <div align="center">
  <h3>Home Page 🏡</h3> 
